@@ -1,0 +1,850 @@
+Microsoft Windows [Version 10.0.22621.3447]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\BHANHS>
+
+C:\Users\BHANHS>cd "C:\Users\BHANHS\Downloads\appmy"
+
+C:\Users\BHANHS\Downloads\appmy>git init
+Reinitialized existing Git repository in C:/Users/BHANHS/Downloads/appmy/.git/
+
+C:\Users\BHANHS\Downloads\appmy>git add *
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\BHANHS\Downloads\appmy>git log.java
+git: 'log.java' is not a git command. See 'git --help'.
+
+C:\Users\BHANHS\Downloads\appmy>git log.txt
+git: 'log.txt' is not a git command. See 'git --help'.
+
+C:\Users\BHANHS\Downloads\appmy>git log
+commit e6dfae66d5e5e65f1267e7ba791336d3e1bb56f0 (HEAD -> master)
+Author: venky <venky5@gmail.com>
+Date:   Thu Apr 25 12:30:51 2024 +0530
+
+    Changed my.java
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\BHANHS\Downloads\appmy>git .gitignore
+git: '.gitignore' is not a git command. See 'git --help'.
+
+C:\Users\BHANHS\Downloads\appmy>git gitignore
+git: 'gitignore' is not a git command. See 'git --help'.
+
+C:\Users\BHANHS\Downloads\appmy>gitignore
+'gitignore' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\BHANHS\Downloads\appmy>git add *
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git status -uno
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+Untracked files not listed (use -u option to show untracked files)
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git status -u
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git ls-files --others --ignored --exclude-standard
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git branch login
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git commit -m "another change"
+[master 54cfcf1] another change
+ 3 files changed, 3 insertions(+)
+ create mode 100644 many/single.java
+ create mode 100644 more/hash.java
+
+C:\Users\BHANHS\Downloads\appmy>git checkout login
+Switched to branch 'login'
+
+C:\Users\BHANHS\Downloads\appmy>git branch
+* login
+  master
+
+C:\Users\BHANHS\Downloads\appmy>git add "C:\Users\BHANHS\Downloads\appmy\login.java"
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch login
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   login.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git commit -m "login form"
+[login a691837] login form
+ 1 file changed, 1 insertion(+)
+ create mode 100644 login.java
+
+C:\Users\BHANHS\Downloads\appmy>git log
+commit a691837225d17930d21e3515532a3fc67e2cb813 (HEAD -> login)
+Author: sachin <sachingowda@gmail.com>
+Date:   Thu Apr 25 14:01:22 2024 +0530
+
+    login form
+
+commit e6dfae66d5e5e65f1267e7ba791336d3e1bb56f0
+Author: venky <venky5@gmail.com>
+Date:   Thu Apr 25 12:30:51 2024 +0530
+
+    Changed my.java
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch login
+nothing to commit, working tree clean
+
+C:\Users\BHANHS\Downloads\appmy>git commit -m "master"
+On branch login
+nothing to commit, working tree clean
+
+C:\Users\BHANHS\Downloads\appmy>git checkout master
+Switched to branch 'master'
+
+C:\Users\BHANHS\Downloads\appmy>git branch
+  login
+* master
+
+C:\Users\BHANHS\Downloads\appmy>git log
+commit 54cfcf14dcf46ec95811e08ced05e3b9e9d004cb (HEAD -> master)
+Author: sachin <sachingowda@gmail.com>
+Date:   Thu Apr 25 13:57:05 2024 +0530
+
+    another change
+
+commit e6dfae66d5e5e65f1267e7ba791336d3e1bb56f0
+Author: venky <venky5@gmail.com>
+Date:   Thu Apr 25 12:30:51 2024 +0530
+
+    Changed my.java
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\BHANHS\Downloads\appmy>git merge master
+Already up to date.
+
+C:\Users\BHANHS\Downloads\appmy>git commit
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\BHANHS\Downloads\appmy>git merge login
+Merge made by the 'ort' strategy.
+ login.java | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 login.java
+
+C:\Users\BHANHS\Downloads\appmy>git log
+commit 47f427b0cfd1811e1b2312d7cc195b19c1faa4e2 (HEAD -> master)
+Merge: 54cfcf1 a691837
+Author: sachin <sachingowda@gmail.com>
+Date:   Thu Apr 25 14:12:17 2024 +0530
+
+    Merge branch 'login'
+
+commit a691837225d17930d21e3515532a3fc67e2cb813 (login)
+Author: sachin <sachingowda@gmail.com>
+Date:   Thu Apr 25 14:01:22 2024 +0530
+
+    login form
+
+commit 54cfcf14dcf46ec95811e08ced05e3b9e9d004cb
+Author: sachin <sachingowda@gmail.com>
+Date:   Thu Apr 25 13:57:05 2024 +0530
+
+    another change
+
+commit e6dfae66d5e5e65f1267e7ba791336d3e1bb56f0
+Author: venky <venky5@gmail.com>
+Date:   Thu Apr 25 12:30:51 2024 +0530
+
+    Changed my.java
+
+C:\Users\BHANHS\Downloads\appmy> git reset e6dfae66d5e5e65f1267e7ba791336d3e1bb56f0
+Unstaged changes after reset:
+M       my.java
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        login.java
+        many/
+        more/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\BHANHS\Downloads\appmy>git revert -m 1 <merge_commit_ha
+sh>
+The syntax of the command is incorrect.
+
+C:\Users\BHANHS\Downloads\appmy>git revert
+usage: git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] <commit>...
+   or: git revert (--continue | --skip | --abort | --quit)
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    --commit              opposite of --no-commit
+    -e, --[no-]edit       edit the commit message
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -m, --[no-]mainline <parent-number>
+                          select mainline parent
+    --[no-]rerere-autoupdate
+                          update the index with reused conflict resolution if possible
+    --[no-]strategy <strategy>
+                          merge strategy
+    -X, --[no-]strategy-option <option>
+                          option for merge strategy
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    --[no-]reference      use the 'reference' format to refer to commits
+
+
+C:\Users\BHANHS\Downloads\appmy>git revert -m "commit"
+error: option `mainline' expects a number greater than zero
+
+C:\Users\BHANHS\Downloads\appmy>git revert -m 1 "commit"
+fatal: bad revision 'commit'
+
+C:\Users\BHANHS\Downloads\appmy>git revert -m 1 "commit_hash"
+fatal: bad revision 'commit_hash'
+
+C:\Users\BHANHS\Downloads\appmy>git reset --hard <commit_before_
+merge>
+The syntax of the command is incorrect.
+
+C:\Users\BHANHS\Downloads\appmy>git reset --hard "commit mess"
+fatal: ambiguous argument 'commit mess': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+C:\Users\BHANHS\Downloads\appmy>git checkout login
+error: The following untracked working tree files would be overwritten by checkout:
+        login.java
+Please move or remove them before you switch branches.
+Aborting
+
+C:\Users\BHANHS\Downloads\appmy>git checkout master
+M       my.java
+Already on 'master'
+
+C:\Users\BHANHS\Downloads\appmy>git merge login
+Updating e6dfae6..a691837
+error: The following untracked working tree files would be overwritten by merge:
+        login.java
+Please move or remove them before you merge.
+Aborting
+
+C:\Users\BHANHS\Downloads\appmy>git aborting
+git: 'aborting' is not a git command. See 'git --help'.
+
+C:\Users\BHANHS\Downloads\appmy>git reset -v
+error: unknown switch `v'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+C:\Users\BHANHS\Downloads\appmy>git reset v
+fatal: ambiguous argument 'v': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+C:\Users\BHANHS\Downloads\appmy>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\BHANHS\Downloads\appmy>git remote add origin https://github.com/Bhanugowda5/HomePage.git
+error: remote origin already exists.
+
+C:\Users\BHANHS\Downloads\appmy>git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\BHANHS\Downloads\appmy>git add .
+
+C:\Users\BHANHS\Downloads\appmy>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\BHANHS\Downloads\appmy>git push origin master
+To https://github.com/Bhanugowda5/HomePage.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Bhanugowda5/HomePage.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\BHANHS\Downloads\appmy>git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 874 bytes | 32.00 KiB/s, done.
+From https://github.com/Bhanugowda5/HomePage
+ * [new branch]      main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   login.java
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git remote add origin https://github.com/Bhanugowda5/HomePage.git
+error: remote origin already exists.
+
+C:\Users\BHANHS\Downloads\appmy>git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\BHANHS\Downloads\appmy>git push origin master
+To https://github.com/Bhanugowda5/HomePage.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Bhanugowda5/HomePage.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   login.java
+        new file:   many/single.java
+        new file:   more/hash.java
+        modified:   my.java
+
+
+C:\Users\BHANHS\Downloads\appmy>git commit -m "intialcommit"
+[master 96d463d] intialcommit
+ 4 files changed, 4 insertions(+)
+ create mode 100644 login.java
+ create mode 100644 many/single.java
+ create mode 100644 more/hash.java
+
+C:\Users\BHANHS\Downloads\appmy>git remote add origin https://github.com/Bhanugowda5/HomePage.git
+error: remote origin already exists.
+
+C:\Users\BHANHS\Downloads\appmy>git remote add origin "https://g
+ithub.com/Bhanugowda5/HomePage.git"
+error: remote origin already exists.
+
+C:\Users\BHANHS\Downloads\appmy>git push -u origin master
+To https://github.com/Bhanugowda5/HomePage.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Bhanugowda5/HomePage.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\BHANHS\Downloads\appmy>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\BHANHS\Downloads\appmy>git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]progress       force progress reporting
+    --[no-]reject-shallow don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --checkout            opposite of --no-checkout
+    --[no-]bare           create a bare repository
+    --[no-]mirror         create a mirror repository (implies bare)
+    -l, --[no-]local      to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    --hardlinks           opposite of --no-hardlinks
+    -s, --[no-]shared     setup as shared repository
+    --[no-]recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --[no-]recursive ...  alias of --recurse-submodules
+    -j, --[no-]jobs <n>   number of submodules cloned in parallel
+    --[no-]template <template-directory>
+                          directory from which templates will be used
+    --[no-]reference <repo>
+                          reference repository
+    --[no-]reference-if-able <repo>
+                          reference repository
+    --[no-]dissociate     use --reference only while cloning
+    -o, --[no-]origin <name>
+                          use <name> instead of 'origin' to track upstream
+    -b, --[no-]branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --[no-]upload-pack <path>
+                          path to git-upload-pack on the remote
+    --[no-]depth <depth>  create a shallow clone of that depth
+    --[no-]shallow-since <time>
+                          create a shallow clone since a specific time
+    --[no-]shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --[no-]single-branch  clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --tags                opposite of --no-tags
+    --[no-]shallow-submodules
+                          any cloned submodules will be shallow
+    --[no-]separate-git-dir <gitdir>
+                          separate git dir from working tree
+    --[no-]ref-format <format>
+                          specify the reference format to use
+    -c, --[no-]config <key=value>
+                          set config inside the new repository
+    --[no-]server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --[no-]filter <args>  object filtering
+    --[no-]also-filter-submodules
+                          apply partial clone filters to submodules
+    --[no-]remote-submodules
+                          any cloned submodules will use their remote-tracking branch
+    --[no-]sparse         initialize sparse-checkout file to include only files at root
+    --[no-]bundle-uri <uri>
+                          a URI for downloading bundles before fetching from origin remote
+
+
+C:\Users\BHANHS\Downloads\appmy>git clone C:\Users\BHANHS\Downloads\appmy>git clone
+Cloning into 'clone'...
+done.
+
+C:\Users\BHANHS\Downloads\appmy>fatal: You must specify a repository to clone.
+'fatal:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\BHANHS\Downloads\appmy>
+C:\Users\BHANHS\Downloads\appmy>usage: git clone [<options>] [--] <repo> [<dir>]
+The system cannot find the file specified.
+
+C:\Users\BHANHS\Downloads\appmy>git clone https://github.com/Bhanugowda5/HomePage.git
+Cloning into 'HomePage'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 28 (delta 4), reused 25 (delta 4), pack-reused 0
+Receiving objects: 100% (28/28), 6.55 KiB | 838.00 KiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+C:\Users\BHANHS\Downloads\appmy>git README.md
+git: 'README.md' is not a git command. See 'git --help'.
+
+C:\Users\BHANHS\Downloads\appmy>git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+C:\Users\BHANHS\Downloads\appmy>git remote add origin "https://github.com/Bhanugowda5/HomePage.git"
+error: remote origin already exists.
+
+C:\Users\BHANHS\Downloads\appmy>git remote add origin "https://github.com/Bhanugowda5/HomePage.git"
+error: remote origin already exists.
+
+C:\Users\BHANHS\Downloads\appmy>git push origin master
+To https://github.com/Bhanugowda5/HomePage.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Bhanugowda5/HomePage.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\BHANHS\Downloads\appmy>git pull origin master
+From https://github.com/Bhanugowda5/HomePage
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\BHANHS\Downloads\appmy>git push origin master
+To https://github.com/Bhanugowda5/HomePage.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Bhanugowda5/HomePage.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        HomePage/
+        clone/
+        git
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\BHANHS\Downloads\appmy>git add *
+warning: adding embedded git repository: HomePage
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> HomePage
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached HomePage
+hint:
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: clone
+
+C:\Users\BHANHS\Downloads\appmy>git rm
+fatal: No pathspec was given. Which files should I remove?
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HomePage
+        new file:   clone
+        new file:   git
+
+
+C:\Users\BHANHS\Downloads\appmy>git restore
+fatal: you must specify path(s) to restore
+
+C:\Users\BHANHS\Downloads\appmy>git restore "C:\Users\BHANHS\Downloads\appm
+y\login.java"
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HomePage
+        new file:   clone
+        new file:   git
+
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HomePage
+        new file:   clone
+        new file:   git
+
+
+C:\Users\BHANHS\Downloads\appmy>dir
+ Volume in drive C is System
+ Volume Serial Number is C8FE-BF6F
+
+ Directory of C:\Users\BHANHS\Downloads\appmy
+
+25-04-2024  14:54    <DIR>          .
+25-04-2024  14:04    <DIR>          ..
+25-04-2024  12:21               144 app.java
+25-04-2024  11:08                43 ash.java
+25-04-2024  14:54    <DIR>          clone
+25-04-2024  14:54                 0 git
+25-04-2024  14:54    <DIR>          HomePage
+25-04-2024  14:12                 5 login.java
+25-04-2024  14:06    <DIR>          many
+25-04-2024  14:06    <DIR>          more
+25-04-2024  14:06               191 my.java
+               5 File(s)            383 bytes
+               6 Dir(s)  384,814,821,376 bytes free
+
+C:\Users\BHANHS\Downloads\appmy>git add .
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HomePage
+        new file:   clone
+        new file:   git
+
+
+C:\Users\BHANHS\Downloads\appmy>git add login.java
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HomePage
+        new file:   clone
+        new file:   git
+
+
+C:\Users\BHANHS\Downloads\appmy>git restore --stage login.java
+
+C:\Users\BHANHS\Downloads\appmy>git restore --staged login.java
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HomePage
+        new file:   clone
+        new file:   git
+
+
+C:\Users\BHANHS\Downloads\appmy>git add "C:\Users\BHANHS\Downloads\appmy\login.java"
+
+C:\Users\BHANHS\Downloads\appmy>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   HomePage
+        new file:   clone
+        new file:   git
+
+
+C:\Users\BHANHS\Downloads\appmy>cd..
+
+C:\Users\BHANHS\Downloads>cd "C:\Users\BHANHS\Desktop\myapps"
+
+C:\Users\BHANHS\Desktop\myapps>git init
+Initialized empty Git repository in C:/Users/BHANHS/Desktop/myapps/.git/
+
+C:\Users\BHANHS\Desktop\myapps>git add *
+
+C:\Users\BHANHS\Desktop\myapps>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.java
+        new file:   ash.java
+        new file:   login.java
+        new file:   my.java
+
+
+C:\Users\BHANHS\Desktop\myapps>git commit -m "commit message"
+[master (root-commit) 3feaf1b] commit message
+ 4 files changed, 34 insertions(+)
+ create mode 100644 app.java
+ create mode 100644 ash.java
+ create mode 100644 login.java
+ create mode 100644 my.java
+
+C:\Users\BHANHS\Desktop\myapps>git remote add origin https://github.com/Bhanugowda5/HomePage.git
+
+C:\Users\BHANHS\Desktop\myapps>git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\BHANHS\Desktop\myapps>git clone https://github.com/Bhanugowda5/HomePage.git
+Cloning into 'HomePage'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 28 (delta 4), reused 25 (delta 4), pack-reused 0
+Receiving objects: 100% (28/28), 6.55 KiB | 558.00 KiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+C:\Users\BHANHS\Desktop\myapps>cd HomePage
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.java
+        ash.java
+        login.java
+        my.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git checkout branch master
+error: pathspec 'branch' did not match any file(s) known to git
+error: pathspec 'master' did not match any file(s) known to git
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git checkout master
+branch 'master' set up to track 'origin/master'.
+Switched to a new branch 'master'
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git add *
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   app.java
+        new file:   ash.java
+        new file:   login.java
+        new file:   my.java
+
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git commit -m "message"
+[master e0329f6] message
+ 4 files changed, 34 insertions(+)
+ create mode 100644 app.java
+ create mode 100644 ash.java
+ create mode 100644 login.java
+ create mode 100644 my.java
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git push origin
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 799 bytes | 99.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Bhanugowda5/HomePage.git
+   dd159ff..e0329f6  master -> master
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git checkout login
+error: pathspec 'login' did not match any file(s) known to git
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\BHANHS\Desktop\myapps\HomePage>
